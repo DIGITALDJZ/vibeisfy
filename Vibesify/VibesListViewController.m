@@ -84,6 +84,7 @@
     [self.view bringSubviewToFront:_friendsButtonView];
 
     [self areaButtonPressed:nil];
+    NSLog(@"dummy commit");
     
 }
 
