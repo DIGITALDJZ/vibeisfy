@@ -79,6 +79,9 @@
     
     UITapGestureRecognizer * friendsButtonTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(friendsButtonPressed:)];
     [self.friendsButtonView addGestureRecognizer:friendsButtonTap];
+    
+    [self.view bringSubviewToFront:_areaButtonView];
+    [self.view bringSubviewToFront:_friendsButtonView];
 
     [self areaButtonPressed:nil];
     
