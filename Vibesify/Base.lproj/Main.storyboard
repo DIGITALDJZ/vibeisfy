@@ -478,55 +478,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabBarFooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="dGj-Y5-XiV">
-                                <rect key="frame" x="0.0" y="515" width="320" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrN-dn-Gef">
-                                <rect key="frame" x="0.0" y="515" width="160" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Area">
-                                    <color key="titleColor" red="0.4823529411764706" green="0.76470588235294112" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="areaButtonPressed:" destination="XMz-RK-4Ks" eventType="touchUpInside" id="JUU-4S-I7T"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47N-fZ-T1R">
-                                <rect key="frame" x="160" y="515" width="160" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Friends">
-                                    <color key="titleColor" red="0.4823529412" green="0.76470588240000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="friendsButtonPressed:" destination="XMz-RK-4Ks" eventType="touchUpInside" id="4Lz-dl-rxp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sJ-1V-fAg" userLabel="Button - AddNew">
-                                <rect key="frame" x="140" y="500" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="addButton.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="newVibeButtonPressed:" destination="XMz-RK-4Ks" eventType="touchUpInside" id="0Ry-7J-Men"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BQ-sE-eVR" userLabel="Label - Area Icon">
-                                <rect key="frame" x="46" y="527" width="24" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1j-tu-A6Y" userLabel="Label - Friends Icon">
-                                <rect key="frame" x="190" y="530" width="24" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sG-7c-ewb" userLabel="Button - Time">
                                 <rect key="frame" x="0.0" y="64" width="107" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -591,7 +542,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uH4-hS-LKq">
-                                <rect key="frame" x="0.0" y="101" width="320" height="418"/>
+                                <rect key="frame" x="0.0" y="101" width="320" height="245"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -621,19 +572,79 @@
                                     <outlet property="delegate" destination="XMz-RK-4Ks" id="Efb-tm-crY"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlF-ZK-w7z" userLabel="View - Area Button">
+                                <rect key="frame" x="0.0" y="515" width="160" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Area" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJJ-YR-lqz" userLabel="Label - Area Button">
+                                        <rect key="frame" x="73" y="16" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.52156862745098043" green="0.55294117647058827" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSv-j9-1CM" userLabel="Label - Area Icon">
+                                        <rect key="frame" x="59" y="17" width="11" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.52156862749999999" green="0.55294117649999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVY-df-bV4" userLabel="Label - Area Border">
+                                        <rect key="frame" x="0.0" y="51" width="160" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.17254901960784313" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-09-UN2" userLabel="View - Friends Button">
+                                <rect key="frame" x="160" y="515" width="160" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6e-dW-NN6" userLabel="Label - Friends Button">
+                                        <rect key="frame" x="65" y="16" width="50" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.52156862749999999" green="0.55294117649999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVB-j3-X8Q" userLabel="Label - Friends Icon">
+                                        <rect key="frame" x="44" y="17" width="17" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.52156862749999999" green="0.55294117649999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ5-nc-jSP" userLabel="Label - Friends Border">
+                                        <rect key="frame" x="0.0" y="51" width="160" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.25098039220000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GLk-WC-4Z5"/>
                     <connections>
-                        <outlet property="areaButtonOutlet" destination="JrN-dn-Gef" id="go0-mY-M0A"/>
-                        <outlet property="areaIcon" destination="7BQ-sE-eVR" id="xXC-FU-E8t"/>
+                        <outlet property="areaBorderLabel" destination="bVY-df-bV4" id="n3m-RJ-OvE"/>
+                        <outlet property="areaButtonLabel" destination="jJJ-YR-lqz" id="bk3-o6-tCJ"/>
+                        <outlet property="areaButtonView" destination="JlF-ZK-w7z" id="VAx-M2-p6s"/>
+                        <outlet property="areaIconLabel" destination="CSv-j9-1CM" id="Dox-FO-PsV"/>
                         <outlet property="attendanceButtonOutlet" destination="G9p-ZS-Cej" id="FgQ-zG-Xq9"/>
                         <outlet property="attendenceBorder" destination="THR-6e-9YS" id="Plq-Si-wHR"/>
                         <outlet property="distanceBorder" destination="FjM-j7-Kf7" id="aKo-Xt-jgM"/>
                         <outlet property="distanceButtonOutlet" destination="e4l-zy-kx8" id="XYp-63-f1F"/>
-                        <outlet property="friendsButtonOutlet" destination="47N-fZ-T1R" id="3Sj-Sb-9dX"/>
-                        <outlet property="friendsIcon" destination="k1j-tu-A6Y" id="bUU-h7-1Qe"/>
+                        <outlet property="friendsBorderLabel" destination="gZ5-nc-jSP" id="5VE-7Q-MnL"/>
+                        <outlet property="friendsButtonLabel" destination="D6e-dW-NN6" id="QG7-hb-bNe"/>
+                        <outlet property="friendsButtonView" destination="tdQ-09-UN2" id="tcv-eD-7Lw"/>
+                        <outlet property="friendsIconLabel" destination="cVB-j3-X8Q" id="Aee-Rc-dZq"/>
                         <outlet property="timeBorder" destination="AHq-Ba-w2V" id="trU-PK-eEj"/>
                         <outlet property="timeButtonOutlet" destination="8sG-7c-ewb" id="HKy-q8-63Z"/>
                         <outlet property="vibesList" destination="uH4-hS-LKq" id="Fq2-l6-8p5"/>
@@ -645,7 +656,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="addButton.png" width="40" height="40"/>
         <image name="facebook.png" width="72" height="72"/>
         <image name="green_button.png" width="132" height="34"/>
         <image name="logo.png" width="320" height="552"/>
@@ -653,7 +663,6 @@
         <image name="signin.png" width="98" height="34"/>
         <image name="signup.png" width="98" height="34"/>
         <image name="splash.png" width="320" height="552"/>
-        <image name="tabBarFooter.png" width="320" height="53"/>
         <image name="twitter.png" width="72" height="72"/>
         <image name="vibesify_navigation.png" width="68" height="31"/>
     </resources>

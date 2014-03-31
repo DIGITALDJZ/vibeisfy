@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VibesListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
+@interface VibesListViewController : UIViewController
 
 @end

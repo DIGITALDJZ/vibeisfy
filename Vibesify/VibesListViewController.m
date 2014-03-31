@@ -13,21 +13,25 @@
 
 @interface VibesListViewController ()
 {
-    CALayer *areaBorderLayer;
-    CALayer *friendsBorderLayer;
     UIColor *lightGreenColor;
     UIColor *lightGreyColor;
     UIColor *darkGreyColor;
     UIColor *blackColor;
     UIColor *sortBorderColor;
     UIColor *sortButtonTextColor;
-    BOOL isAreaButton;
 }
+@property (weak, nonatomic) IBOutlet UIView *areaButtonView;
+@property (weak, nonatomic) IBOutlet UIView *friendsButtonView;
 
-@property (weak, nonatomic) IBOutlet UIButton *areaButtonOutlet;
-@property (weak, nonatomic) IBOutlet UIButton *friendsButtonOutlet;
-@property (weak, nonatomic) IBOutlet UILabel *areaIcon;
-@property (weak, nonatomic) IBOutlet UILabel *friendsIcon;
+@property (weak, nonatomic) IBOutlet UILabel *areaButtonLabel;
+@property (weak, nonatomic) IBOutlet UILabel *areaIconLabel;
+@property (weak, nonatomic) IBOutlet UILabel *areaBorderLabel;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *friendsButtonLabel;
+@property (weak, nonatomic) IBOutlet UILabel *friendsIconLabel;
+@property (weak, nonatomic) IBOutlet UILabel *friendsBorderLabel;
+
 @property (weak, nonatomic) IBOutlet UIButton *timeButtonOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *distanceButtonOutlet;
 @property (weak, nonatomic) IBOutlet UIButton *attendanceButtonOutlet;
@@ -37,6 +41,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *vibesList;
 
 @end
+
 @implementation VibesListViewController
 
 - (void)viewDidLoad
@@ -46,8 +51,6 @@
     self.navigationItem.hidesBackButton = YES;
     self.navigationController.navigationBar.barTintColor = [Utils colorWithR:17 G:24 B:34 A:1];
     self.navigationController.navigationBar.translucent = YES;
-
-    isAreaButton = YES;
     
     lightGreenColor = [Utils colorWithR:112 G:192 B:102 A:1];
     darkGreyColor = [Utils colorWithR:37 G:44 B:52 A:1];
@@ -56,17 +59,13 @@
     sortBorderColor = [Utils colorWithR:33 G:40 B:48 A:1];
     sortButtonTextColor = [Utils colorWithR:180 G:186 B:192 A:1];
     
-    areaBorderLayer = [Utils getBottomBorderWithHeight:2 andColorOfView:self.areaButtonOutlet borderColor:lightGreenColor];
-    friendsBorderLayer = [Utils getBottomBorderWithHeight:2 andColorOfView:self.friendsButtonOutlet borderColor:darkGreyColor];
     
-    [self.areaButtonOutlet.titleLabel setFont:[Utils fontWithName:@"OpenSans" andSize:14]];
-    [self.friendsButtonOutlet.titleLabel setFont:[Utils fontWithName:@"OpenSans" andSize:14]];
+    [self.areaButtonLabel setFont:[Utils fontWithName:@"OpenSans" andSize:14]];
+    [Utils addFontAwesomeIconToLabel:self.areaIconLabel withString:@"fa-map-marker" andSize:20];
     
-    [Utils addFontAwesomeIconToLabel:self.areaIcon withString:@"fa-map-marker" andSize:24 ];
-    [Utils addFontAwesomeIconToLabel:self.friendsIcon withString:@"fa-user" andSize:24];
+    [self.friendsButtonLabel setFont:[Utils fontWithName:@"OpenSans" andSize:14]];
+    [Utils addFontAwesomeIconToLabel:self.friendsIconLabel withString:@"fa-user" andSize:20];
     
-    self.areaIcon.textColor = lightGreenColor;
-    self.friendsIcon.textColor = lightGreyColor;
     
     self.timeBorder.backgroundColor = lightGreenColor;
     [self.timeButtonOutlet setTitleColor:lightGreenColor forState:UIControlStateNormal];
@@ -75,10 +74,40 @@
     [self.distanceButtonOutlet.titleLabel setFont:[Utils fontWithName:@"OpenSans" andSize:13]];
     [self.attendanceButtonOutlet.titleLabel setFont:[Utils fontWithName:@"OpenSans" andSize:13]];
     
-    [self setAreaButton:isAreaButton];
+    UITapGestureRecognizer * areaButtonTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(areaButtonPressed:)];
+    [self.areaButtonView addGestureRecognizer:areaButtonTap];
     
-    // Do any additional setup after loading the view.
+    UITapGestureRecognizer * friendsButtonTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(friendsButtonPressed:)];
+    [self.friendsButtonView addGestureRecognizer:friendsButtonTap];
+
+    [self areaButtonPressed:nil];
+    
 }
+
+- (void)areaButtonPressed:(UITapGestureRecognizer *)recognizer{
+    self.areaButtonView.backgroundColor = blackColor;
+    self.areaButtonLabel.textColor = lightGreenColor;
+    self.areaIconLabel.textColor = lightGreenColor;
+    self.areaBorderLabel.backgroundColor = lightGreenColor;
+    
+    self.friendsButtonView.backgroundColor = darkGreyColor;
+    self.friendsButtonLabel.textColor = lightGreyColor;
+    self.friendsIconLabel.textColor = lightGreyColor;
+    self.friendsBorderLabel.backgroundColor = darkGreyColor;
+}
+
+- (void)friendsButtonPressed:(UITapGestureRecognizer *)recognizer{
+    self.friendsButtonView.backgroundColor = blackColor;
+    self.friendsButtonLabel.textColor = lightGreenColor;
+    self.friendsIconLabel.textColor = lightGreenColor;
+    self.friendsBorderLabel.backgroundColor = lightGreenColor;
+    
+    self.areaButtonView.backgroundColor = darkGreyColor;
+    self.areaButtonLabel.textColor = lightGreyColor;
+    self.areaIconLabel.textColor = lightGreyColor;
+    self.areaBorderLabel.backgroundColor = darkGreyColor;
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -133,47 +162,6 @@
     
     self.timeBorder.backgroundColor = sortBorderColor;
     [self.timeButtonOutlet setTitleColor:sortButtonTextColor forState:UIControlStateNormal];
-}
-
-- (IBAction)newVibeButtonPressed:(id)sender {
-}
-
-- (IBAction)areaButtonPressed:(id)sender {
-    isAreaButton = YES;
-    [self setAreaButton:isAreaButton];
-}
-
-- (IBAction)friendsButtonPressed:(id)sender {
-    isAreaButton = NO;
-    [self setAreaButton:isAreaButton];
-}
-
-- (void)changePressedButtonState:(UIButton *)button {
-    button.backgroundColor = blackColor;
-    button.titleLabel.textColor = lightGreenColor;
-}
-
-- (void)resetButtonState:(UIButton *)button {
-    button.backgroundColor = darkGreyColor;
-    button.titleLabel.textColor = lightGreyColor;
-}
-
-- (void)setAreaButton:(BOOL)isAreaButtonPressed {
-    if (isAreaButtonPressed) {
-        areaBorderLayer.borderColor = [lightGreenColor CGColor];
-        friendsBorderLayer.borderColor = [darkGreyColor CGColor];
-        [self changePressedButtonState:self.areaButtonOutlet];
-        [self resetButtonState:self.friendsButtonOutlet];
-        self.areaIcon.textColor = lightGreenColor;
-        self.friendsIcon.textColor = lightGreyColor;
-    } else {
-        friendsBorderLayer.borderColor = [lightGreenColor CGColor];
-        areaBorderLayer.borderColor = [darkGreyColor CGColor];
-        [self changePressedButtonState:self.friendsButtonOutlet];
-        [self resetButtonState:self.areaButtonOutlet];
-        self.areaIcon.textColor = lightGreyColor;
-        self.friendsIcon.textColor = lightGreenColor;
-    }
 }
 
 @end

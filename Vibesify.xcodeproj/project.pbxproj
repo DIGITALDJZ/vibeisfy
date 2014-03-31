@@ -16,7 +16,6 @@
 		FB19AA1C18C84D5B003BC9F8 /* vibeinfo_image.png in Resources */ = {isa = PBXBuildFile; fileRef = FB19AA1518C84D5B003BC9F8 /* vibeinfo_image.png */; };
 		FB1D274D18CEB5640018C6C3 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1D274C18CEB5640018C6C3 /* Utils.m */; };
 		FB1D275018CEC1F50018C6C3 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1D274F18CEC1F50018C6C3 /* SignUpViewController.m */; };
-		FB40A57918E77618003D95ED /* VibesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB40A57818E77618003D95ED /* VibesListViewController.m */; };
 		FB40A57C18E7B95F003D95ED /* VibeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB40A57B18E7B95F003D95ED /* VibeTableViewCell.m */; };
 		FB46EFAA18CBB807005C9F13 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = FB46EFA018CBB807005C9F13 /* add.png */; };
 		FB46EFAB18CBB807005C9F13 /* camera-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FB46EFA118CBB807005C9F13 /* camera-2.png */; };
@@ -35,6 +34,7 @@
 		FB495CF418CD381C00ECD174 /* rect.png in Resources */ = {isa = PBXBuildFile; fileRef = FB495CF318CD381C00ECD174 /* rect.png */; };
 		FB495CF818CD448800ECD174 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB495CF718CD448800ECD174 /* arrow.png */; };
 		FB6E255318E9090200D91AC9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6E255218E9090200D91AC9 /* Parse.framework */; };
+		FB6E255618E90A1300D91AC9 /* VibesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6E255518E90A1300D91AC9 /* VibesListViewController.m */; };
 		FB9AC0FD18E76AA600D26853 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB9AC0FC18E76AA600D26853 /* FontAwesome.ttf */; };
 		FB9AC10118E76B2500D26853 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9AC10018E76B2500D26853 /* NSString+FontAwesome.m */; };
 		FB9AC10418E76B3B00D26853 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9AC10318E76B3B00D26853 /* UIFont+FontAwesome.m */; };
@@ -94,8 +94,6 @@
 		FB1D274C18CEB5640018C6C3 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		FB1D274E18CEC1F50018C6C3 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		FB1D274F18CEC1F50018C6C3 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		FB40A57718E77618003D95ED /* VibesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibesListViewController.h; sourceTree = "<group>"; };
-		FB40A57818E77618003D95ED /* VibesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibesListViewController.m; sourceTree = "<group>"; };
 		FB40A57A18E7B95F003D95ED /* VibeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibeTableViewCell.h; sourceTree = "<group>"; };
 		FB40A57B18E7B95F003D95ED /* VibeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibeTableViewCell.m; sourceTree = "<group>"; };
 		FB46EFA018CBB807005C9F13 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
@@ -116,6 +114,8 @@
 		FB495CF318CD381C00ECD174 /* rect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rect.png; sourceTree = "<group>"; };
 		FB495CF718CD448800ECD174 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		FB6E255218E9090200D91AC9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FB6E255418E90A1300D91AC9 /* VibesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibesListViewController.h; sourceTree = "<group>"; };
+		FB6E255518E90A1300D91AC9 /* VibesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibesListViewController.m; sourceTree = "<group>"; };
 		FB9AC0FC18E76AA600D26853 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		FB9AC0FF18E76B2500D26853 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
 		FB9AC10018E76B2500D26853 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
@@ -301,8 +301,8 @@
 				FBED22D518C8442C0063E25A /* InitialViewController.m */,
 				FBF2A35B18BDA59F0006E420 /* ViewController.h */,
 				FBF2A35C18BDA59F0006E420 /* ViewController.m */,
-				FB40A57718E77618003D95ED /* VibesListViewController.h */,
-				FB40A57818E77618003D95ED /* VibesListViewController.m */,
+				FB6E255418E90A1300D91AC9 /* VibesListViewController.h */,
+				FB6E255518E90A1300D91AC9 /* VibesListViewController.m */,
 				FB40A57A18E7B95F003D95ED /* VibeTableViewCell.h */,
 				FB40A57B18E7B95F003D95ED /* VibeTableViewCell.m */,
 				FBF2A35E18BDA59F0006E420 /* Images.xcassets */,
@@ -457,10 +457,10 @@
 				FBD64CAC18D962AB009EBE6B /* ResetPasswordViewController.m in Sources */,
 				FBF2A35D18BDA59F0006E420 /* ViewController.m in Sources */,
 				FB40A57C18E7B95F003D95ED /* VibeTableViewCell.m in Sources */,
+				FB6E255618E90A1300D91AC9 /* VibesListViewController.m in Sources */,
 				FB1D274D18CEB5640018C6C3 /* Utils.m in Sources */,
 				FB9AC10118E76B2500D26853 /* NSString+FontAwesome.m in Sources */,
 				FBF2A35718BDA59F0006E420 /* AppDelegate.m in Sources */,
-				FB40A57918E77618003D95ED /* VibesListViewController.m in Sources */,
 				FBF2A35318BDA59F0006E420 /* main.m in Sources */,
 				FB1D275018CEC1F50018C6C3 /* SignUpViewController.m in Sources */,
 				FB495CEE18CD0C2200ECD174 /* SignInViewController.m in Sources */,
