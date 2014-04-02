@@ -22,6 +22,7 @@
 }
 @property (weak, nonatomic) IBOutlet UIView *areaButtonView;
 @property (weak, nonatomic) IBOutlet UIView *friendsButtonView;
+@property (weak, nonatomic) IBOutlet UIButton *createVibeButton;
 
 @property (weak, nonatomic) IBOutlet UILabel *areaButtonLabel;
 @property (weak, nonatomic) IBOutlet UILabel *areaIconLabel;
@@ -82,6 +83,7 @@
     
     [self.view bringSubviewToFront:_areaButtonView];
     [self.view bringSubviewToFront:_friendsButtonView];
+    [self.view bringSubviewToFront:_createVibeButton];
 
     [self areaButtonPressed:nil];
     
@@ -133,6 +135,10 @@
     cell.description.text = @"asdfafas";
     
     return cell;
+}
+
+- (IBAction)createNewVibeButtonPressed:(id)sender {
+    NSLog(@"test");
 }
 
 - (IBAction)timeButtonPressed:(id)sender {

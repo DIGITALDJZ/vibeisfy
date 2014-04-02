@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5YO-3m-V5O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5YO-3m-V5O">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Sign In View Controller - Sign In-->
@@ -542,7 +542,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="uH4-hS-LKq">
-                                <rect key="frame" x="0.0" y="101" width="320" height="245"/>
+                                <rect key="frame" x="0.0" y="101" width="320" height="412"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -554,7 +554,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPI-r2-8y2">
-                                                    <rect key="frame" x="20" y="11" width="32" height="21"/>
+                                                    <rect key="frame" x="55" y="14" width="200" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
@@ -632,6 +632,15 @@
                                 <rect key="frame" x="0.0" y="515" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXX-OM-aqc" userLabel="Button - Add New Vibe">
+                                <rect key="frame" x="140" y="500" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" image="addButton.png" backgroundImage="addButton.png"/>
+                                <connections>
+                                    <action selector="createNewVibeButtonPressed:" destination="XMz-RK-4Ks" eventType="touchUpInside" id="cxJ-ZM-yCL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.25098039220000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -643,6 +652,7 @@
                         <outlet property="areaIconLabel" destination="CSv-j9-1CM" id="Dox-FO-PsV"/>
                         <outlet property="attendanceButtonOutlet" destination="G9p-ZS-Cej" id="FgQ-zG-Xq9"/>
                         <outlet property="attendenceBorder" destination="THR-6e-9YS" id="Plq-Si-wHR"/>
+                        <outlet property="createVibeButton" destination="MXX-OM-aqc" id="Z1D-cc-w6m"/>
                         <outlet property="distanceBorder" destination="FjM-j7-Kf7" id="aKo-Xt-jgM"/>
                         <outlet property="distanceButtonOutlet" destination="e4l-zy-kx8" id="XYp-63-f1F"/>
                         <outlet property="friendsBorderLabel" destination="gZ5-nc-jSP" id="5VE-7Q-MnL"/>
@@ -660,6 +670,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addButton.png" width="40" height="40"/>
         <image name="facebook.png" width="72" height="72"/>
         <image name="green_button.png" width="132" height="34"/>
         <image name="logo.png" width="320" height="552"/>

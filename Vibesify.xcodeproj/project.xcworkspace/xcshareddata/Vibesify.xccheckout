@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>AB625797-63E4-4D0C-806A-51CEC8616871</string>
+	<string>46F5F1A7-A0DC-4335-94D4-826C294A15E8</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Vibesify</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>23FD56FC-DC57-4161-A5A2-80968D86605D</key>
-		<string>https://github.com/KirilNN/vibeisfy.git</string>
+		<key>D3B4A335-1443-4A06-93E9-BCEBE70D3C20</key>
+		<string>ssh://github.com/KirilNN/vibeisfy.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Vibesify.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>23FD56FC-DC57-4161-A5A2-80968D86605D</key>
+		<key>D3B4A335-1443-4A06-93E9-BCEBE70D3C20</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/KirilNN/vibeisfy.git</string>
+	<string>ssh://github.com/KirilNN/vibeisfy.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>23FD56FC-DC57-4161-A5A2-80968D86605D</string>
+	<string>D3B4A335-1443-4A06-93E9-BCEBE70D3C20</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>23FD56FC-DC57-4161-A5A2-80968D86605D</string>
+			<string>D3B4A335-1443-4A06-93E9-BCEBE70D3C20</string>
 			<key>IDESourceControlWCCName</key>
-			<string>vibesify</string>
+			<string>vibeisfy</string>
 		</dict>
 	</array>
 </dict>
