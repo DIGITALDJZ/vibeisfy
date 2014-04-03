@@ -137,10 +137,6 @@
     return cell;
 }
 
-- (IBAction)createNewVibeButtonPressed:(id)sender {
-    NSLog(@"test");
-}
-
 - (IBAction)timeButtonPressed:(id)sender {
     self.timeBorder.backgroundColor = lightGreenColor;
     [self.timeButtonOutlet setTitleColor:lightGreenColor forState:UIControlStateNormal];

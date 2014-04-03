@@ -35,6 +35,7 @@
 		FB495CF818CD448800ECD174 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = FB495CF718CD448800ECD174 /* arrow.png */; };
 		FB6E255318E9090200D91AC9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6E255218E9090200D91AC9 /* Parse.framework */; };
 		FB6E255618E90A1300D91AC9 /* VibesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6E255518E90A1300D91AC9 /* VibesListViewController.m */; };
+		FB85A79B18ED221B003A71E8 /* NewVIbeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB85A79A18ED221B003A71E8 /* NewVIbeViewController.m */; };
 		FB9AC0FD18E76AA600D26853 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB9AC0FC18E76AA600D26853 /* FontAwesome.ttf */; };
 		FB9AC10118E76B2500D26853 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9AC10018E76B2500D26853 /* NSString+FontAwesome.m */; };
 		FB9AC10418E76B3B00D26853 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9AC10318E76B3B00D26853 /* UIFont+FontAwesome.m */; };
@@ -116,6 +117,8 @@
 		FB6E255218E9090200D91AC9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		FB6E255418E90A1300D91AC9 /* VibesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VibesListViewController.h; sourceTree = "<group>"; };
 		FB6E255518E90A1300D91AC9 /* VibesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VibesListViewController.m; sourceTree = "<group>"; };
+		FB85A79918ED221B003A71E8 /* NewVIbeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVIbeViewController.h; sourceTree = "<group>"; };
+		FB85A79A18ED221B003A71E8 /* NewVIbeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVIbeViewController.m; sourceTree = "<group>"; };
 		FB9AC0FC18E76AA600D26853 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		FB9AC0FF18E76B2500D26853 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
 		FB9AC10018E76B2500D26853 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				FB6E255518E90A1300D91AC9 /* VibesListViewController.m */,
 				FB40A57A18E7B95F003D95ED /* VibeTableViewCell.h */,
 				FB40A57B18E7B95F003D95ED /* VibeTableViewCell.m */,
+				FB85A79918ED221B003A71E8 /* NewVIbeViewController.h */,
+				FB85A79A18ED221B003A71E8 /* NewVIbeViewController.m */,
 				FBF2A35E18BDA59F0006E420 /* Images.xcassets */,
 				FB40A58018E7DA2A003D95ED /* Font Awesome Helpers */,
 				FBF2A34D18BDA59F0006E420 /* Supporting Files */,
@@ -461,6 +466,7 @@
 				FB1D274D18CEB5640018C6C3 /* Utils.m in Sources */,
 				FB9AC10118E76B2500D26853 /* NSString+FontAwesome.m in Sources */,
 				FBF2A35718BDA59F0006E420 /* AppDelegate.m in Sources */,
+				FB85A79B18ED221B003A71E8 /* NewVIbeViewController.m in Sources */,
 				FBF2A35318BDA59F0006E420 /* main.m in Sources */,
 				FB1D275018CEC1F50018C6C3 /* SignUpViewController.m in Sources */,
 				FB495CEE18CD0C2200ECD174 /* SignInViewController.m in Sources */,
