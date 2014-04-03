@@ -7,6 +7,7 @@
 //
 
 #import "VibeTableViewCell.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation VibeTableViewCell
 
@@ -14,14 +15,18 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+        
     }
     return self;
 }
 
 - (void)awakeFromNib
 {
-    // Initialization code
+    self.userAvatar.layer.cornerRadius = 20;
+    self.vibeCategory.layer.cornerRadius = 20;
+    
+    self.userAvatar.layer.masksToBounds = YES;
+    self.vibeCategory.layer.masksToBounds = YES;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

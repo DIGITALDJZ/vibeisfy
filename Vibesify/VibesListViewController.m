@@ -10,7 +10,6 @@
 #import "Utils.h"
 #import "VibeTableViewCell.h"
 
-
 @interface VibesListViewController ()
 {
     UIColor *lightGreenColor;
@@ -132,7 +131,7 @@
         cell = [[VibeTableViewCell alloc] init];
     }
     
-    cell.description.text = @"asdfafas";
+    cell.description.text = @"Test text for two lines appearance for description in tableViewCell label";
     
     return cell;
 }
@@ -171,6 +170,10 @@
     
     self.timeBorder.backgroundColor = sortBorderColor;
     [self.timeButtonOutlet setTitleColor:sortButtonTextColor forState:UIControlStateNormal];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 70;
 }
 
 @end
