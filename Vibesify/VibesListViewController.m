@@ -132,8 +132,14 @@
     }
     
     cell.description.text = @"Test text for two lines appearance for description in tableViewCell label";
+    cell.timeCreated.text = @"17:34";
+    cell.areaDistance.text = @"950m";
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 
 - (IBAction)timeButtonPressed:(id)sender {
@@ -169,7 +175,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 70;
+    return 72;
 }
 
 @end
