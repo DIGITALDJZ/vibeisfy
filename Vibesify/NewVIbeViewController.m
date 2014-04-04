@@ -8,6 +8,7 @@
 
 #import "NewVIbeViewController.h"
 #import "Utils.h"
+#import <Parse/Parse.h>
 
 @interface NewVIbeViewController ()
 {
@@ -29,7 +30,6 @@
     
     self.descriptionTextView.font = [Utils fontWithName:@"OpenSans" andSize:13];
     [self.vibeTextLabel setFont: [Utils fontWithName:@"OpenSans" andSize:13]];
-    [Utils setBottomBorderWithHeight:1 andColorOfView:self.descriptionTextView borderColor:[Utils colorWithR:0 G:0 B:0 A:1]];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -38,7 +38,6 @@
 
 - (void) textViewDidBeginEditing:(UITextField *)textView{
     //detect which text view is edited
-    [Utils setBottomBorderWithHeight:1 andColorOfView:textView borderColor:[Utils colorWithR:112 G:192 B:102 A:1]];
     if(!isDescriptionEdited){
         self.descriptionTextView.text = nil;
         self.vibeDescriptionTextLengthLabel.text = [NSString stringWithFormat:@"%d", 160];
@@ -56,6 +55,16 @@
     int remaining = 160 - textLength;
     self.vibeDescriptionTextLengthLabel.text = [NSString stringWithFormat:@"%d", remaining];
     return  textLength<= 159;
+}
+
+- (IBAction)submit:(id)sender {
+    for (int i=0; i<300; i++) {
+        PFObject *gameScore = [PFObject objectWithClassName:@"GameScore"];
+        gameScore[@"score"] = @1337;
+        gameScore[@"playerName"] = @"Sean Plott";
+        gameScore[@"cheatMode"] = @NO;
+        [gameScore saveInBackground];
+    }
 }
 
 

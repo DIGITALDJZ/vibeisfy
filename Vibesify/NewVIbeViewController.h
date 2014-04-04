@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewVIbeViewController : UIViewController
+@interface NewVIbeViewController : UIViewController <UITextViewDelegate>
 
 @end

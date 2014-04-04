@@ -9,6 +9,7 @@
 #import "VibesListViewController.h"
 #import "Utils.h"
 #import "VibeTableViewCell.h"
+#import  <Parse/Parse.h>
 
 @interface VibesListViewController ()
 {
@@ -18,6 +19,7 @@
     UIColor *blackColor;
     UIColor *sortBorderColor;
     UIColor *sortButtonTextColor;
+    NSArray *data;
 }
 @property (weak, nonatomic) IBOutlet UIView *areaButtonView;
 @property (weak, nonatomic) IBOutlet UIView *friendsButtonView;
@@ -86,6 +88,21 @@
 
     [self areaButtonPressed:nil];
     
+    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
+    [query whereKey:@"score" equalTo:@1337];
+    query.limit = 300;
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved %d scores.", objects.count);
+            data = [NSArray arrayWithArray:objects];
+           
+        } else {
+            // Log details of the failure
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
 }
 
 - (void)areaButtonPressed:(UITapGestureRecognizer *)recognizer{
@@ -131,8 +148,8 @@
         cell = [[VibeTableViewCell alloc] init];
     }
     
-    cell.description.text = @"Test text for two lines appearance for description in tableViewCell label";
-    cell.timeCreated.text = @"17:34";
+    cell.description.text = [data objectAtIndex:indexPath.row][@"playerName"];
+    cell.timeCreated.text = [data objectAtIndex:indexPath.row][@"createdAt"];
     cell.areaDistance.text = @"950m";
     
     return cell;
