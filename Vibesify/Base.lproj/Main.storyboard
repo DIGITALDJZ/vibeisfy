@@ -500,17 +500,52 @@
                                 <color key="textColor" red="0.64313725490196072" green="0.6705882352941176" blue="0.69803921568627447" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4P-lK-YkA">
-                                <rect key="frame" x="111" y="330" width="80" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tabBarFooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="63J-Rr-32T" userLabel="Image View - TabBar">
+                                <rect key="frame" x="0.0" y="515" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="0.70991104009999995" green="0.17254901959999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="submit:" destination="Fwu-GQ-5NC" eventType="touchUpInside" id="3a8-55-JzR"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wtZ-ex-1ob" userLabel="View - Publish Button">
+                                <rect key="frame" x="0.0" y="521" width="160" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publish" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mc-pb-lte" userLabel="Label - Publish Button">
+                                        <rect key="frame" x="68" y="12" width="49" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.4392156862745098" green="0.75294117647058822" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pcn-mw-8OP" userLabel="Label - Publish Icon">
+                                        <rect key="frame" x="50" y="14" width="15" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.43921568630000002" green="0.75294117650000003" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sx6-ru-mo4" userLabel="View - Cancel Button">
+                                <rect key="frame" x="160" y="521" width="160" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cancel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-pX-ruG" userLabel="Label - Cancel Button">
+                                        <rect key="frame" x="63" y="12" width="45" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.52156862749999999" green="0.55294117649999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkx-Os-iGt" userLabel="Label - Publish Icon">
+                                        <rect key="frame" x="46" y="13" width="15" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.52156862749999999" green="0.55294117649999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1450980392" green="0.17254901959999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.21960784310000001" green="0.25098039220000001" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -518,7 +553,13 @@
                         <barButtonItem key="backBarButtonItem" image="vibesify_navigation.png" id="QEZ-Hf-Ips"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="cancelButtonIcon" destination="zkx-Os-iGt" id="F0G-aO-SeC"/>
+                        <outlet property="cancelButtonLabel" destination="Hfb-pX-ruG" id="HT1-Oi-2v9"/>
+                        <outlet property="cancelButtonView" destination="Sx6-ru-mo4" id="7n6-jd-093"/>
                         <outlet property="descriptionTextView" destination="6ZQ-Ga-bx5" id="pbJ-lf-fLB"/>
+                        <outlet property="publishButtonIcon" destination="Pcn-mw-8OP" id="HVe-Pa-SdF"/>
+                        <outlet property="publishButtonLabel" destination="3mc-pb-lte" id="4l9-7D-KWR"/>
+                        <outlet property="publishButtonView" destination="wtZ-ex-1ob" id="9Dv-9y-F8Z"/>
                         <outlet property="vibeDescriptionTextLengthLabel" destination="RHV-XA-IcT" id="to0-Wt-tID"/>
                         <outlet property="vibeTextLabel" destination="vUj-RF-166" id="fiW-bF-DMr"/>
                     </connections>

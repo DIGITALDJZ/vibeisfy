@@ -88,21 +88,6 @@
 
     [self areaButtonPressed:nil];
     
-    PFQuery *query = [PFQuery queryWithClassName:@"GameScore"];
-    [query whereKey:@"score" equalTo:@1337];
-    query.limit = 300;
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            // The find succeeded.
-            NSLog(@"Successfully retrieved %d scores.", objects.count);
-            data = [NSArray arrayWithArray:objects];
-           
-        } else {
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    }];
-    
 }
 
 - (void)areaButtonPressed:(UITapGestureRecognizer *)recognizer{
